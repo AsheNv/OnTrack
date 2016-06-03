@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/lin_layout_bg"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/arrivalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/text_view2_bg"
+        android:textSize="20sp"
+        android:textColor="#f9f5f5"
+        android:text="start time" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+
+        android:paddingRight="10dp" >
+        <TextView
+            android:id="@+id/fromText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#313131"
+            android:background="@drawable/text_view_bg"
+            android:text="end time"
+            android:paddingBottom="1dp" />
+        <TextView
+            android:id="@+id/freqText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Freq"
+
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/toText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="duration"
+            android:background="@drawable/text_view_bg"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/durationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+        android:textColor="#fffefe"
+        android:text="Freq"
+        android:background="@drawable/text_view2_bg"
+         />
+    <ImageView
+        android:id="@+id/t_type"
+        android:contentDescription="More"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="right"
+        android:adjustViewBounds="true"
+        android:scaleType="fitEnd"
+        android:paddingRight="10dp" />
+</LinearLayout>
